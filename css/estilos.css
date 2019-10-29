@@ -1,7 +1,21 @@
-.encabezado{
-  color: lightblue;
-  font-size: 45;
+button{
+  float: right;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-h1{
-  color: green;
+.encabezado > p{
+  color: blue;
+  background-color: yellow;
+  margin-left: 20px;
+  margin-right: 45px;
+  margin-top: 20px;
+  width: auto;
+  height: 60px;
+  margin-bottom: 45px;
+}
+.encabezado{
+  margin-top: 30px;
+}
+.bienvenida{
+  margin-top: 20px;
 }
