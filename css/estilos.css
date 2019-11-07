@@ -132,3 +132,17 @@ body{
 .datos{
     margin-top: 15px;
 }
+
+.descripcion p{
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 5px;
+}
+
+.curriculum p{
+  border-style: solid;
+  border-color: black;
+  background-color: #ccc;
+  border-width: thick;
+  border-radius: 10px;
+}
