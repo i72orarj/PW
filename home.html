@@ -4,36 +4,45 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <title>
-      Pagina de login
+      Pagina de inicio
     </title>
   </head>
   <body>
-    <div class="header">
-      <nav>
-        <div class="texto">
-          Esto es un encabezado fijo
-        </div>
-        <div class="button">
-          <button type="button" name="login">Iniciar Sesion</button>
-          <button type="button" name="registro">Registrarse</button>
-        </div>
-      </nav>
+    <div class="main">
+      <div class="button">
+        <a href="registro.html"><button type="button" name="registro">Registrarse</button></a>
+        <a href="login.html"><button type="button" name="login">Iniciar Sesion</button></a>
+      </div>
+      <br><br>
+    <div class="titulo_web">
+      <p><em>Descripcion de la funcionalidad de la web y lo que encontrarás en ella</em></p>
+      <img class="logo "src="logo.png" alt="¿donde esta el logo?">
     </div>
-    <h1>NOMBRE DE LA WEB</h1>
-    <p>Descripcion de la funcionalidad de la web y lo que encontrarás en ella</p>
-    <img src="logo.png" alt="¿donde esta el logo?">
     <hr>
-    <input type="text" name="buscador" value=""><!--buscador-->
+    <div class="buscador">
+      <div class="navigation">
+        <input type="search" name="buscador" placeholder="Buscar...">
+        <a href="buscador.html"><button type="button" name="button">Buscar</button></a>
+      </div>
+
+    </div>
     <hr>
-    <h2>categorias</h2>
-    <button type="button" name="categoria1"></button>
-    <button type="button" name="categoria2"></button>
-    <button type="button" name="categoria3"></button>
-    <button type="button" name="categoria4"></button>
-    <button type="button" name="categoria5"></button>
-    <button type="button" name="categoria6"></button>
-    <button type="button" name="categoria7"></button>
-    <button type="button" name="categoria8"></button>
-    <button type="button" name="categoria9"></button>
-  </body>
+    <div class="categorias">
+      <h1>Categorias</h1>
+      <a href=""><button type="button" name="categoria1" class="boton_izquierda">Ciencias</button></a>
+      <a href=""><button type="button" name="categoria2" class="boton_medio">Informatica</button></a>
+      <a href=""><button type="button" name="categoria3" class="boton_derecha">Electricidad</button></a>
+      <br>
+      <a href=""><button type="button" name="categoria4" class="boton_izquierda">Ciencias</button></a>
+      <a href=""><button type="button" name="categoria5" class="boton_medio">Informatica</button></a>
+      <a href=""><button type="button" name="categoria6" class="boton_derecha">Electricidad</button></a>
+      <br>
+      <a href=""><button type="button" name="categoria7" class="boton_izquierda">Ciencias</button></a>
+      <a href=""><button type="button" name="categoria8" class="boton_medio">Informatica</button></a>
+      <a href=""><button type="button" name="categoria9" class="boton_derecha">Electricidad</button></a>
+      </div>
+      </div>
+    </body>
+
+
 </html>
