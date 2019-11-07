@@ -112,7 +112,8 @@ body{
 .nombre_web h1{
   color: blue;
   font-style: oblique;
-
+  font-size: 50px;
+  margin-left: 30px;
 }
 
 .subtitulo h2{
@@ -145,4 +146,22 @@ body{
   background-color: #ccc;
   border-width: thick;
   border-radius: 10px;
+}
+
+.parametro_cv{
+  padding: 10px;
+}
+.parametro_cv input{
+  width: 100%;
+}
+.parametro_cv .visibilidad{
+  float: right;
+}
+
+.button_guardar button{
+  float: left;
+  padding: 5px;
+  background-color: pink;
+  border-radius: 10px;
+  margin-left: 8px;
 }
