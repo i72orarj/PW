@@ -128,3 +128,7 @@ body{
 .datos input{
   margin-left: 15px;
 }
+
+.datos{
+    margin-top: 15px;
+}
