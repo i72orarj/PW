@@ -1,65 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head lang="es">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <title>Editar perfil</title>
+    <link rel="shortcut icon" href="img/logo.jpg">
   </head>
-
   <body>
     <div class="main">
       <div class="nombre_web">
-        <h1>WorkJobs</h1>
+        <a href="home.html"><h1>WorkJobs</h1></a>
       </div>
       <hr>
       <div class="subtitulo">
         <h2>EDITAR PERFIL</h2>
       </div>
-      <div class="parametro_cv">
-        <label>Situación profesional <label class="visibilidad">Visibilidad <select class="" name="visibilidad">
-          <option value="privado">Privado</option>
-          <option value="publico">Público</option>
-        </select> </label><br> <input type ="text" name ="profesion"></label>
-
-      </div>
-      <div class="parametro_cv">
-        <label>Intereses y linea de trabajo <label class="visibilidad">Visibilidad <select class="" name="visibilidad">
-          <option value="privado">Privado</option>
-          <option value="publico">Público</option>
-        </select> </label><br> <input type ="text" name ="profesion"></label>
-
-      </div>
-      <div class="parametro_cv">
-        <label>Articulos y comentarios <label class="visibilidad">Visibilidad <select class="" name="visibilidad">
-          <option value="privado">Privado</option>
-          <option value="publico">Público</option>
-        </select> </label><br> <input type ="text" name ="profesion"></label>
-
-      </div>
-      <div class="parametro_cv">
-        <label>Formación académica <label class="visibilidad">Visibilidad <select class="" name="visibilidad">
-          <option value="privado">Privado</option>
-          <option value="publico">Público</option>
-        </select> </label><br> <input type ="text" name ="profesion"></label>
-
-      </div>
-      <div class="parametro_cv">
-        <label>Experiencia cientifica <label class="visibilidad">Visibilidad <select class="" name="visibilidad">
-          <option value="privado">Privado</option>
-          <option value="publico">Público</option>
-        </select> </label><br> <input type ="text" name ="profesion"></label>
-
-      </div>
-      <div class="parametro_cv">
-        <label>Produccion cientifica <label class="visibilidad">Visibilidad <select class="" name="visibilidad">
-          <option value="privado">Privado</option>
-          <option value="publico">Público</option>
-        </select> </label><br> <input type ="text" name ="profesion"></label>
-
-      </div>
-      <div class="button_guardar">
-        <button type="button" class="button_guardar" name="button">Guardar</button>
-      </div>
+      <form class="curriculum" action="index.html" method="post">
+        <div class="parametro_cv">
+          <label>Situación profesional <label class="visibilidad">Visibilidad <select class="" name="visibilidad">
+            <option value="privado">Privado</option>
+            <option value="publico">Público</option>
+          </select> </label><br> <input type ="text" name ="profesion"></label>
+        </div>
+        <div class="parametro_cv">
+          <label>Intereses y linea de trabajo <label class="visibilidad">Visibilidad <select class="" name="visibilidad">
+            <option value="privado">Privado</option>
+            <option value="publico">Público</option>
+          </select> </label><br> <input type ="text" name ="profesion"></label>
+        </div>
+        <div class="parametro_cv">
+          <label>Articulos y comentarios <label class="visibilidad">Visibilidad <select class="" name="visibilidad">
+            <option value="privado">Privado</option>
+            <option value="publico">Público</option>
+          </select> </label><br> <input type ="text" name ="profesion"></label>
+        </div>
+        <div class="parametro_cv">
+          <label>Formación académica <label class="visibilidad">Visibilidad <select class="" name="visibilidad">
+            <option value="privado">Privado</option>
+            <option value="publico">Público</option>
+          </select> </label><br> <input type ="text" name ="profesion"></label>
+        </div>
+        <div class="parametro_cv">
+          <label>Experiencia cientifica <label class="visibilidad">Visibilidad <select class="" name="visibilidad">
+            <option value="privado">Privado</option>
+            <option value="publico">Público</option>
+          </select> </label><br> <input type ="text" name ="profesion"></label>
+        </div>
+        <div class="parametro_cv">
+          <label>Produccion cientifica <label class="visibilidad">Visibilidad <select class="" name="visibilidad">
+            <option value="privado">Privado</option>
+            <option value="publico">Público</option>
+          </select> </label><br> <input type ="text" name ="profesion"></label>
+        </div>
+        <div class="button_guardar">
+          <button type="button" class="button_guardar" name="button">Guardar</button>
+          <!-- <input type="submit"  value="Guardar"> -->
+          <!-- Activaremos el submit cuando la parte servidora este montada -->
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <br>
+      <br>
+      <br>
+      <br>
     </div>
   </body>
 </html>

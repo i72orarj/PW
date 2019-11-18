@@ -2,7 +2,12 @@ body{
   align-self: center;
   /* margin: 5%; */
   /* padding: 2%; */
-  background-color: #ccc;
+  /* background-image: url("img/fondo.jpg"); */
+  background: url("../img/fondo.jpg");
+  background-size: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  /* background-color: #ccc; */
   font-family: monospace;
 }
 
@@ -10,14 +15,20 @@ body{
   align-self: center;
   padding: 5%;
   background-color: white;
-  border-radius: 15px;
+  /* border-radius: 15px; */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
-
-.header{
+.footer{
+  align-self: center;
+  padding: 5%;
   background-color: #ccc;
-
+  /* border-radius: 15px; */
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
-.button button{
+
+.registro_login button{
   float: right;
   /* padding-right: 4%; */
   padding: 15px 4%;
@@ -85,8 +96,10 @@ body{
 }
 .categorias .boton_medio{
   padding: 15px 4%;
-  margin-left: 20%;
-  vertical-align: middle;
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+  /* vertical-align: middle; */
   background-color: #008cba;
   font-size: 18px;
   margin-bottom: 10px;
@@ -146,10 +159,14 @@ body{
 
 .datos input{
   /* margin-left: 15px; */
-  width: 70%;
+  width: 60%;
   float: right;
   margin-right: 5%;
 
+}
+.datos select{
+  float: right;
+  margin-right: 5%;
 }
 
 .datos{
@@ -178,6 +195,8 @@ body{
 }
 .parametro_cv .visibilidad{
   float: right;
+  margin-right: 5%;
+  margin-bottom: 1%;
 }
 
 .button_guardar button{
@@ -187,6 +206,33 @@ body{
   border-radius: 10px;
   margin-left: 8px;
 }
+.button_editar button{
+  float: right;
+  padding: 5px;
+  background-color: pink;
+  border-radius: 10px;
+  margin-left: 8px;
+}
 .iniciar_sesion{
   padding: 20px;
+}
+.foto_nombre{
+  padding-left: 5%;
+}
+.foto_nombre img{
+  width: 15%;
+}
+.seguir button{
+  /* float: left; */
+  padding: 5px;
+  background-color: pink;
+  border-radius: 10px;
+  /* margin-left: 40px; */
+}
+.fallo_contrasena{
+  padding: 20px;
+}
+.fallo_login{
+  padding: 20px;
+  /* float: left; */
 }

@@ -1,43 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    <title>Login</title>
+      <script src="js/funciones.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/estilos.css">
+      <link rel="shortcut icon" href="img/logo.jpg">
+    <title> Login</title>
   </head>
-
   <body>
     <div class="main">
-    <div class="nombre_web">
-    <h1>WorkJobs</h1>
-  </div>
-<hr>
-    <div class="subtitulo">
-      <h2>LOGIN</h2>
+      <div class="nombre_web">
+        <a href="home.html"><h1>WorkJobs</h1></a>
+      </div>
+      <hr>
+      <div class="subtitulo">
+        <h2>LOGIN</h2>
+      </div>
+      <form class="login_datos" action="index.html" method="post">
+        <div class="datos">
+          <label>Usuario: <input type ="text" name ="user" id="user"></label>
+        </div>
+        <div class="datos">
+          <label>Contraseña: <input type ="password" name ="passwd" id="passwd"></label>
+        </div>
+        <br>
+        <div class="button_back">
+          <a href="home.html"><button type="button" name="Back">Back</button></a>
+        </div>
+        <div class="button_enter">
+          <a id="button_login"><button type="button" name="Enter" onclick="login()">Enter</button></a>
+          <!-- <input type="submit"  value="Enter"> -->
+          <!-- Activaremos el submit cuando la parte servidora este montada -->
+        </div>
+      </form>
+      <div class="fallo_login">
+        <br><br>
+        <p id="fallo_login"></p>
+      </div>
+      <br>
+      <br>
+      <a href="contraseñaolvidada.html">¿Has olvidado tu contraseña?</a>
     </div>
-    <div class="datos">
-    <label>Usuario: <input type ="text" name ="user"></label>
-  </div>
-
-    <div class="datos">
-    <label>Contraseña: <input type ="password" name ="passwd"></label>
-  </div>
-    <br>
-    <div class="button_back">
-      <a href="home.html"><button type="button" name="Back">Back</button></a>
-  </div>
-  <div class="button_enter">
-    <button type="button" name="Enter">Enter</button>
-  </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-     <a href="contraseñaolvidada.html">¿Has olvidado tu contraseña?</a>
+    <div class="footer">
+     <br>
+     <br>
+     <br>
+     <br>
    </div>
   </body>
 </html>

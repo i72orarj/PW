@@ -1,49 +1,60 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <title>Edita los datos de tu perfil</title>
+    <link rel="shortcut icon" href="img/logo.jpg">
   </head>
   <body>
     <div class="main">
       <div class="nombre_web">
-        <h1>WorkJobs</h1>
+        <a href="home.html"><h1>WorkJobs</h1></a>
       </div>
-    <hr>
-    <div class="subtitulo">
+      <hr>
+      <div class="subtitulo">
         <h2>DATOS PERSONALES</h2>
+      </div>
+      <form class="datos_personales" action="index.html" method="post">
+        <div class="datos">
+          <label>Provincia <select class="" name="provincias">
+            <option value="cordoba">Cordoba</option>
+            <option value="malaga">Malaga</option>
+            <option value="sevilla">Sevilla</option>
+          </select></label>
+        </div>
+        <div class="datos">
+          <label>Localidad <input type="text" name="localidad" value=""></label>
+        </div>
+        <div class="datos">
+          <label>Direccion completa <input type="text" name="direccion" value=""></label>
+        </div>
+        <div class="datos">
+          <label>Sector profesional  <select class="" name="provincias">
+            <option value="cordoba">Cordoba</option>
+            <option value="malaga">Malaga</option>
+            <option value="sevilla">Sevilla</option>
+          </select></label>
+        </div>
+        <div class="datos">
+          <label>Telefono <input type="tel" name="telefono" pattern="[0-9]{9}"value=""></label>
+        </div>
+        <div class="datos">
+          <label>Fecha de nacimiento (dd/mm/aaaa) <input type="date" name="fecha_nacimiento" value=""></label>
+        </div>
+        <br>
+        <div class="button_enter">
+          <button type="button" name="Enter">Enter</button>
+          <!-- <input type="submit"  value="Guardar"> -->
+          <!-- Activaremos el submit cuando la parte servidora este montada -->
+        </div>
+      </form>
     </div>
-    <div class="datos">
-      <label>Provincia <select class="" name="provincias">
-        <option value="cordoba">Cordoba</option>
-        <option value="malaga">Malaga</option>
-        <option value="sevilla">Sevilla</option>
-      </select></label>
-    </div>
-    <div class="datos">
-      <label>Localidad <input type="text" name="localidad" value=""></label>
-    </div>
-    <div class="datos">
-      <label>Direccion completa <input type="text" name="direccion" value=""></label>
-    </div>
-    <div class="datos">
-      <label>Sector profesional  <select class="" name="provincias">
-        <option value="cordoba">Cordoba</option>
-        <option value="malaga">Malaga</option>
-        <option value="sevilla">Sevilla</option>
-      </select></label>
-    </div>
-    <div class="datos">
-      <label>Telefono <input type="text" name="telefono" value=""></label>
-    </div>
-    <div class="datos">
-      <label>Fecha de nacimiento (dd/mm/aaaa) <input type="text" name="fecha_nacimiento" value=""></label>
-    </div>
-    <br>
-    <div class="button_enter">
-      <button type="button" name="Enter">Enter</button>
-    </div>
+    <div class="footer">
+      <br>
+      <br>
+      <br>
+      <br>
     </div>
   </body>
 </html>

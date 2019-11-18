@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link rel="shortcut icon" href="img/logo.jpg">
     <title>Olvido de contraseña</title>
   </head>
-
   <body>
     <div class="main">
       <div class="nombre_web">
@@ -18,13 +16,23 @@
         <h2>RECUPERAR CONTRASEÑA</h2>
       </div>
       <p style="padding-left:20px">Introduzca su e-mail para cambiar su clave actual</p>
-      <div class="datos">
-        <label>E-mail <input type ="email" name ="correo_para_cambiar_passwd"></label>
-      </div>
+      <form class="nueva_contrasena" action="index.html" method="post">
+        <div class="datos">
+          <label>E-mail <input type ="email" name ="correo_para_cambiar_passwd"></label>
+        </div>
+        <br>
+        <div class="button_enter">
+          <button type="button" name="Enter">Enter</button>
+          <!-- <input type="submit"  value="Enter"> -->
+          <!-- Activaremos el submit cuando la parte servidora este montada -->
+        </div>
+      </form>
+    </div>
+    <div class="footer">
       <br>
-      <div class="button_enter">
-        <button type="button" name="Enter">Enter</button>
-      </div>
+      <br>
+      <br>
+      <br>
     </div>
   </body>
 </html>

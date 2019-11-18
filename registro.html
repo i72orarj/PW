@@ -1,40 +1,58 @@
 r<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Registro</title>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+    <script src="js/funciones.js"></script>
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
-  </head>
+    <link rel="shortcut icon" href="img/logo.jpg">
+  <title> Registro</title>
+</head>
 
   <body>
     <div class="main">
       <div class="nombre_web">
-        <h1>WorkJobs</h1>
+        <a href="home.html"><h1>WorkJobs</h1></a>
       </div>
       <br>
       <hr>
       <div class="subtitulo">
         <h2>REGISTRARSE</h2>
       </div>
-      <div class="datos">
-        <label>Nombre <input type ="text" name ="nombre"></label>
-      </div>
-      <div class="datos">
-        <label>Apellidos <input type ="text" name ="apellido"></label>
-      </div>
-      <div class="datos">
-        <label>Correo electrónico <input type ="text" name ="correo"></label>
-      </div>
-      <div class="datos">
-        <label>Contraseña <input type ="text" name ="password"></label>
-      </div>
-      <div class="datos">
-        <label>Repita la contraseña <input type ="text" name ="password2"></label>
-      </div>
+      <form class="registro" action="index.html" method="post">
+        <div class="datos">
+          <label>Nombre <input type ="text" name ="nombre"></label>
+        </div>
+        <div class="datos">
+          <label>Apellidos <input type ="text" name ="apellido"></label>
+        </div>
+        <div class="datos">
+          <label>Correo electrónico <input type ="email" name ="correo"></label>
+        </div>
+        <div class="datos">
+          <label>Contraseña <input type ="password" name ="password" id="password"></label>
+        </div>
+        <div class="datos">
+          <label>Repita la contraseña <input type ="password" name ="password2" id="password2"></label>
+        </div>
+        <div class="fallo_contrasena">
+          <p id="fallo_contrasena"></p>
+        </div>
+        <div class="button_enter">
+          <button type="button" name="button_confirmar" onclick="comprobarContrasena()">Enviar</button>
+          <!-- <input type="submit" value="Enviar"> -->
+          <!-- Activaremos el submit cuando la parte servidora este montada -->
+        </div>
+      </form>
       <div class="iniciar_sesion">
         <p>¿Ya estas registrado?</p>
         <a href="login.html">Iniciar sesión</a>
       </div>
+    </div>
+    <div class="footer">
+      <br>
+      <br>
+      <br>
+      <br>
     </div>
   </body>
 </html>
